@@ -1,0 +1,44 @@
+35,82,75,79,5,56,48,81,68,89,39,92,47,63,15,50,81,77,37,43,38,43,18,50,7,67,42,60,12,39,15,10,39,31,99,86,94,8,61,51,11 - apple
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const squareRoot = num => Math.sqrt(num);
+45 / apple
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+false + 40
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+65,64,60,69,35,63,11,35,31,86,31,39,88,58,7,67,24,12,24,54,59,5,26,0,0,46,84,83,32,77,67,7,62,90,39,55,60,5,2,53,95,13,10,21,26,40,18,53,68,12,49,42,29,82,80,12,11,88,41,18,13,42,18,6,72,1,11,34,38,49,56,25,64,90,4,19,39,12,17,64,57 + 63
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+62 * 71,53,34,93,55,51,41,58,36,38,29,59,1,51,37,91,69,95,91,29,52,18,24,90,20,46,4,50,33,55,97,65,65,19,57,54,45,22,41,32,26,57,20,47,29,61,50,94,85,20,29,27,38,36,10,52,22,96,17,45,87,97,3,75,85,10,11,22,64,86,17,82,59,87,54,84,52,19,30,46,7,1,76
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+true / 34
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+75,5,12,35,16,52,88,34,17 * true
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+59 * false
+const getRandomSubset = (array, size) => array.slice(0, size);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+// This is a comment
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+80 / banana
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+true + 24
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+true + 74
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
