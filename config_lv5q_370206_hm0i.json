@@ -1,0 +1,8 @@
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const variableName = getRandomNumber();
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
